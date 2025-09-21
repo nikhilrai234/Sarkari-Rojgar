@@ -1,0 +1,16 @@
+:root{--accent:#7a1f24;--muted:#666;--card-bg:#fff;--bg:#f5f6f7;--container-width:1100px;--radius:8px;--shadow:0 6px 18px rgba(20,20,30,0.06);font-family:'Inter',system-ui;}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#222;font-family:Inter,sans-serif}
+.container{max-width:var(--container-width);margin:0 auto;padding:16px}
+.site-header{background:#fff;border-bottom:1px solid #e6e6e6}
+.header-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+.brand-title{font-weight:700;color:var(--accent);font-size:18px}
+.brand-sub{font-size:12px;color:var(--muted)}
+.top-links a{margin-left:12px;color:#333;text-decoration:none;font-size:13px}.top-links a:hover{color:var(--accent)}
+.search-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:12px 0}.search-left{display:flex;gap:8px;flex:1}.search-left input{flex:1;padding:10px;border-radius:30px;border:1px solid #ddd;background:#fff}.search-left button{background:var(--accent);color:#fff;border:none;padding:10px 14px;border-radius:20px;cursor:pointer}
+.search-right button{margin-left:8px;padding:8px 12px;border-radius:6px;border:1px solid #ddd;background:#fff;cursor:pointer}
+.main-grid{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:start}
+.content h2{margin-top:0;color:var(--accent)}.list{display:flex;flex-direction:column;gap:12px}.card{background:#fff;padding:12px;border-radius:var(--radius);box-shadow:var(--shadow)}.card h3{margin:0;font-size:16px;color:#222}.card p{margin:6px 0 0;color:var(--muted);font-size:13px}.card .tags{margin-top:8px;font-size:12px;color:#666}.card .date{font-size:12px;color:#999}
+.sidebar .widget{background:#fff;padding:12px;border-radius:8px;box-shadow:var(--shadow);margin-bottom:12px}.sidebar h3{margin:0 0 8px 0}
+.pagination{display:flex;gap:8px;justify-content:center;padding:16px 0}.page-btn{padding:8px 12px;border-radius:6px;background:#fff;border:1px solid #ddd;cursor:pointer}.page-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.site-footer{margin-top:32px;padding:16px 0;background:#fff;border-top:1px solid #eee}.site-footer .container{display:flex;justify-content:space-between;font-size:13px;color:#666}
+@media(max-width:880px){.main-grid{grid-template-columns:1fr}.top-links{display:none}.search-right{display:none}.container{padding:12px}}

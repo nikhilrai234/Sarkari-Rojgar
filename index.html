@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sarkari Results — Clone (Demo)</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <div class="brand-title">SARKARI RESULT</div>
+        <div class="brand-sub">WWW.SARKARINICRESULT.IN (CLONE)</div>
+      </div>
+      <div class="top-links">
+        <a href="#">Home</a>
+        <a href="#">Result</a>
+        <a href="#">Admit Card</a>
+        <a href="#">Latest Jobs</a>
+        <a href="#">Admission</a>
+        <a href="#">Syllabus</a>
+        <a href="#">Answer Key</a>
+      </div>
+    </div>
+  </header>
+  <section class="search-bar container">
+    <div class="search-left">
+      <input id="globalSearch" type="search" placeholder="Search jobs, results, admit cards..." />
+      <button id="searchBtn">Search</button>
+    </div>
+    <div class="search-right">
+      <button id="jobAlertBtn">Job Alert</button>
+      <button id="joinFB">Join us on Facebook</button>
+    </div>
+  </section>
+  <main class="container main-grid">
+    <section class="content">
+      <h2>Latest Results & Notifications</h2>
+      <div id="listContainer" class="list"></div>
+      <div class="pagination" id="pagination"></div>
+
+      <!-- Mock Test Section -->
+      <h2>Mock Tests</h2>
+      <div id="mockContainer" class="list"></div>
+    </section>
+    <aside class="sidebar">
+      <div class="widget">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">SBI Online</a></li>
+          <li><a href="#">SSC</a></li>
+          <li><a href="#">UPSC</a></li>
+          <li><a href="#">UPSSSC</a></li>
+          <li><a href="#">Certificate Verification</a></li>
+        </ul>
+      </div>
+      <div class="widget">
+        <h3>Latest Jobs</h3>
+        <ul id="sidebarJobs"></ul>
+      </div>
+      <div class="widget">
+        <h3>About</h3>
+        <p>Demo clone page for a government job/results portal UI — replace with real content.</p>
+      </div>
+    </aside>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div>© Demo Clone — Design only</div>
+      <div>Contact: demo@example.com</div>
+    </div>
+  </footer>
+</body>
+</html>
